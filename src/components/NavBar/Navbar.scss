@@ -1,0 +1,19 @@
+.navbar {
+  background: var(--al-white);
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid var(--al-divider);
+
+  &-logo {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--sb-text-dark);
+  }
+}
