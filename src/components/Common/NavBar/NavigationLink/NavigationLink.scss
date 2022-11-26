@@ -1,0 +1,26 @@
+.navigation-link {
+  cursor: pointer;
+  height: inherit;
+
+  .navigation-anchor {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--al-text-dark);
+
+    display: flex;
+    padding: 20px 30px;
+
+    transition: all 0.5s;
+
+    &.active,
+    &:hover {
+      background-color: var(--al-text-dark);
+      color: var(--al-white);
+    }
+    &:visited {
+      background-color: transparent;
+    }
+  }
+}
