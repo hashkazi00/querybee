@@ -1,0 +1,36 @@
+.button {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.neutral {
+  color: var(--sb-text-dark);
+  border: 1px solid var(--sb-text-dark);
+  border-radius: 5px;
+  transition: all 0.5s;
+  padding: 8px 30px;
+}
+
+.neutral:hover {
+  background-color: #80ca9245;
+  border: 1px solid var(--sb-turquoise);
+}
+
+.giant {
+  color: white;
+  border-radius: 2px;
+  transition: all 0.5s;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  background-color: var(--sb-turquoise);
+  padding: 8px 30px;
+}
+
+.giant:hover {
+  background-color: var(--sb-text-dark);
+}
+
+.right-margin {
+  margin-right: 20px;
+}

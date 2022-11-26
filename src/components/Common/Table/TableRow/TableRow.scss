@@ -1,0 +1,23 @@
+.clickable-row {
+  cursor: pointer;
+}
+
+.clickable-row:hover {
+  background-color: #80ca9275;
+}
+
+.table-row-cell {
+  font-size: 2rem;
+  padding: 6px;
+  font-weight: normal;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+tr:nth-of-type(odd) {
+  background: #80ca9245;
+}
+
+.link {
+  color: #1589ee;
+}
