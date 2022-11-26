@@ -13,6 +13,7 @@ export const useClickOutside = ({ callback }: IUseClickOutsideParams) => {
     const handleClickOutside = (e: MouseEvent) => {
       if (!elementRef?.current?.contains(e.target as Node) && callbackRef) {
         callbackRef.current();
+        console.log("outside");
       }
     };
 

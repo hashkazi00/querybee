@@ -42,19 +42,20 @@ export const NavigationDropdown = ({
     return <ul className="nav-dropdown">{dropdownLinks}</ul>;
   };
   return (
-    <div
-      className={
-        "dropdown-navigation-link " +
-        (isDropdownOpen ||
-        links.findIndex((link) => link.to === location.pathname) >= 0
-          ? "active"
-          : "inactive")
-      }
-      role="button"
-      onClick={openCloseDropDown}
-      ref={dropdownRef}
-    >
-      {label}
+    <div className="dropdown-navigation-link">
+      <div
+        className={
+          "dropdown-navigation-link-label " +
+          (isDropdownOpen ? "active " : "") +
+          (links.findIndex((link) => link.to === location.pathname) >= 0
+            ? "highlight"
+            : "")
+        }
+        ref={dropdownRef}
+        onClick={openCloseDropDown}
+      >
+        {label}
+      </div>
       {dropdownMenu()}
     </div>
   );
