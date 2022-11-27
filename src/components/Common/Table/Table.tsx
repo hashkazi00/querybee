@@ -1,12 +1,11 @@
 import { useEffect, useRef } from "react";
 
-import { useVisibility } from "../../../hooks/useVisibility";
-
 import { GTHeaderCell, TableHeader } from "./TableHeader/TableHeader";
 import { TableRows } from "./TableRows/TableRows";
 import { ColGroup } from "./ColGroup/ColGroup";
 
-import "./Table.scss";
+import "./Table.css";
+import { useVisibility } from "../../../hooks/useVisibility";
 
 export interface ITable<T> {
   tableKeys: GTHeaderCell<T>[];

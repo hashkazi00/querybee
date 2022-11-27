@@ -56,7 +56,7 @@ export const NavigationDropdown = ({
       >
         {label}
       </div>
-      {dropdownMenu()}
+      {isDropdownOpen ? dropdownMenu() : null}
     </div>
   );
 };

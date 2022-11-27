@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 
 import { GTHeaderCell } from "../TableHeader/TableHeader";
 
-import "./TableRow.scss";
+import "./TableRow.css";
 
 interface ITableRow<T> {
   rowData: Array<T>[];
   tableKeys: GTHeaderCell<T>[];
+  index: number;
 }
 
-export function TableRow<T>({ rowData, tableKeys }: ITableRow<T>) {
+export function TableRow<T>({ rowData, tableKeys, index }: ITableRow<T>) {
   const renderValue = ({
     renderItem,
     headerData,
@@ -18,6 +19,9 @@ export function TableRow<T>({ rowData, tableKeys }: ITableRow<T>) {
     renderItem: string | ReactNode;
     headerData: any;
   }) => {
+    if (headerData.type === "serialNo") {
+      return index + 1;
+    }
     if (headerData.type === "price") {
       return <>{`₹ ${renderItem?.toLocaleString()}`}</>;
     }

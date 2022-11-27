@@ -1,5 +1,5 @@
 import { Button } from "../../Button/Button";
-import "./TableHeader.scss";
+import "./TableHeader.css";
 
 export type GTHeaderCell<DataType> = {
   label: Extract<keyof DataType, string>;
@@ -37,7 +37,7 @@ export function TableHeader<T>({
     }
     return (
       <th key={`${tableKey["key"]}__${index}`} className="table-heading-cell">
-        {tableKey["key"]}
+        {tableKey["label"]}
       </th>
     );
   });

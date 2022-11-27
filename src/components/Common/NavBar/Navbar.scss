@@ -1,7 +1,9 @@
 .navbar {
   background: var(--al-white);
-  width: max-content;
+  min-width: 200px;
   height: 100vh;
+  position: relative;
+  z-index: 100;
 
   &-header-container {
     align-items: center;
