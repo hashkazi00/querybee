@@ -41,8 +41,8 @@ Page Load Time:
 
 1. FCP using Lighthouse
 
-![Lighthouse](Screenshot%202022-12-19%20at%2012.51.13%20PM.png)
+![Lighthouse](https://res.cloudinary.com/dayhv1xls/image/upload/v1671435731/Screenshot_2022-12-19_at_12.51.13_PM-1_rprag5.png)
 
 2. Chrome Performance
 
-![Chrome Performance](./Screenshot%202022-12-19%20at%2012.52.36%20PM.png)
+![Chrome Performance](https://res.cloudinary.com/dayhv1xls/image/upload/v1671435634/Screenshot_2022-12-19_at_12.30.08_PM_cz7mqx.png)
