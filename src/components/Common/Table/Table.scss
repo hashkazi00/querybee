@@ -1,0 +1,26 @@
+.table {
+  height: 100vh;
+  .table-container {
+    margin-top: 20px;
+    height: 60%;
+    overflow: auto;
+    border: 1px solid var(--al-divider);
+    table {
+      border-collapse: collapse;
+    }
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.no-results {
+  display: flex;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: var(--sb-text-dark);
+  margin-top: 10vh;
+}

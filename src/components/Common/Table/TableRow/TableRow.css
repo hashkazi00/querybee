@@ -3,7 +3,8 @@
 }
 
 .clickable-row:hover {
-  background-color: #80ca9275;
+  background-color: #2026d275;
+  color: white;
 }
 
 .table-row-cell {

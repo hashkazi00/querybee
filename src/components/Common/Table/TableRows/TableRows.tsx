@@ -3,7 +3,12 @@ import { ITable } from "../Table";
 
 import "./TableRows.css";
 
-export function TableRows<T>({ tableKeys, data, keyId }: ITable<T>) {
+export function TableRows<T>({
+  tableKeys,
+  data,
+  keyId,
+  currentPage,
+}: ITable<T>) {
   const renderRows = () =>
     data.map((rowData: any, index: number) => {
       const key = keyId ? rowData[keyId] : index;
@@ -13,6 +18,7 @@ export function TableRows<T>({ tableKeys, data, keyId }: ITable<T>) {
           tableKeys={tableKeys}
           rowData={rowData}
           index={index}
+          currentPage={currentPage}
         />
       );
     });

@@ -2,16 +2,27 @@ import { TNavbarConfig } from "../Common/NavBar/Navbar.types";
 
 export const QBNavbarConfig: TNavbarConfig[] = [
   {
-    to: "/athis-is-a-link-abc",
+    to: "/new-query",
     label: "New Query",
     type: "link",
     openInNewTab: false,
   },
   {
-    to: "/sthis-is-a-link-too-def",
+    to: "/queries",
     label: "All Queries",
-    type: "link",
-    openInNewTab: false,
+    type: "dropdown",
+    links: [
+      {
+        to: "/queries/all_customers",
+        label: "All Customers",
+        type: "link",
+      },
+      {
+        to: "/queries/all_employees",
+        label: "All Employees",
+        type: "link",
+      },
+    ],
   },
   {
     to: "/tables",

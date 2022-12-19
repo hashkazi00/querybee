@@ -14,7 +14,6 @@ export const Pagination = ({
   currentPage: number;
 }) => {
   const handlePageClick = (event: any) => {
-    console.log("here", event.selected);
     onPageChange && onPageChange(event.selected);
   };
   if (isHidden) return null;

@@ -9,9 +9,15 @@ interface ITableRow<T> {
   rowData: Array<T>[];
   tableKeys: GTHeaderCell<T>[];
   index: number;
+  currentPage?: number;
 }
 
-export function TableRow<T>({ rowData, tableKeys, index }: ITableRow<T>) {
+export function TableRow<T>({
+  rowData,
+  tableKeys,
+  index,
+  currentPage,
+}: ITableRow<T>) {
   const renderValue = ({
     renderItem,
     headerData,
@@ -20,7 +26,9 @@ export function TableRow<T>({ rowData, tableKeys, index }: ITableRow<T>) {
     headerData: any;
   }) => {
     if (headerData.type === "serialNo") {
-      return index + 1;
+      if (currentPage !== undefined) {
+        return currentPage * 20 + index + 1;
+      }
     }
     if (headerData.type === "price") {
       return <>{`₹ ${renderItem?.toLocaleString()}`}</>;
